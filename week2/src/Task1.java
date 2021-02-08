@@ -12,15 +12,16 @@ public class Task1 {
         int n = s1.length();
         int n1 = (int) Math.sqrt(n);
         int f2[][] = new int[n1][n1];
+
         int k = 0;
-        //将数组按反转后的顺序排好
+
         for (int j=n1-1;j>=0;j--){
             for(int i=0;i<=n1-1;i++){
                 f2[i][j]=chars1[k]-'0';
                 k++;
             }
         }
-        //遍历并输出
+
         for(int i=0;i<=n1-1;i++){
             for(int j=0;j<=n1-1;j++){
                 System.out.print("["+f2[i][j]+"]");
